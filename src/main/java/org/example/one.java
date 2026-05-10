@@ -1,5 +1,31 @@
 #include <iostream>
-using namespace std;;
+using namespace std;
+class LoginManager
+{
+    public:
+    string userNameAttempt;
+    string passWordAttempt;
+    void login()
+    {
+        cout << "Hey you need to enter your password and user.\nUsername:";
+        cin >> userNameAttempt;
+        if(userNameAttempt==userName)
+        {
+            cout << "Password:";
+            cin >> passWordAttempt;
+
+            if(passWordAttempt==passWord)
+            {
+
+                cout << "Hey, that's right.";
+
+            }
+        }
+    }
+    private:
+    string passWord = "easypassword";
+    string userName = "user@email.com";
+};
 int main()
 {
     LoginManager loginManagerObj;
